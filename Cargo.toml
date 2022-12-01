@@ -1,0 +1,31 @@
+[package]
+description = "Banana split decoding implementation in Rust"
+license = "GPL-3.0-or-later"
+name = "banana-recovery"
+version = "0.1.0"
+authors = ["Alexander Slesarev <slesarew@gmail.com>", "Vera Abramova <abramova.vera@gmail.com>"]
+edition = "2021"
+repository = "https://github.com/Alzymologist/banana-recovery"
+homepage = "https://github.com/Alzymologist/banana-recovery"
+documentation = "https://docs.rs/banana-recovery/"
+keywords = ["shamir", "banana_split"]
+exclude = ["/.github"]
+
+[dependencies]
+base64 = {version = "0.13.1", default-features = false, features = ["alloc"]}
+bitvec = {version = "1.0.1", default-features = false, features = ["alloc"]}
+hex = {version = "0.4.3", default-features = false, features = ["alloc"]}
+scrypt = {version = "0.10.0", default-features = false}
+serde = {version = "1.0.147", default-features = false, features = ["derive"]}
+serde_json = {version = "1.0.89", default-features = false, features = ["alloc"]}
+sha2 = {version = "0.10.6", default-features = false}
+xsalsa20poly1305 = {version = "0.9.0", default-features = false, features = ["alloc"]}
+zeroize = "1.5.7"
+
+[features]
+default = ["std"]
+std = []
+
+[lib]
+name = "banana_recovery"
+crate-type = ["lib"]
