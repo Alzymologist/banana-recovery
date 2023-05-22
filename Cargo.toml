@@ -12,7 +12,7 @@ keywords = ["shamir", "banana_split"]
 exclude = ["/.github"]
 
 [dependencies]
-base64 = {version = "0.20.0", default-features = false, features = ["alloc"]}
+base64 = {version = "0.21.1", default-features = false, features = ["alloc"]}
 bitvec = {version = "1.0.1", default-features = false, features = ["alloc"]}
 hex = {version = "0.4.3", default-features = false, features = ["alloc"]}
 scrypt = {version = "0.10.0", default-features = false}
